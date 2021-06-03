@@ -17,4 +17,4 @@ It is the code I built following the course https://www.udemy.com/course/advance
 --- postcss<br/>
 --- postcss-cli
 
-<img width="200px" height="200px" alt="homepage image" src="https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/natours-floats/img/homepage.png">
+![](https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/natours-floats/img/homepage.png)
