@@ -5,14 +5,14 @@ CSS/natours-floats
 ----------------------
 Responsive Website with responsive images and fluid layouts.
 It is the code I built following the course https://www.udemy.com/course/advanced-css-and-sass/ from Jonas Schmedtmann
-- Tecnologies:
--- SCSS
--- HTML
--- Node packages:
---- autoprefixer
---- concat
---- live-server
---- node-sass
---- npm-run-all
---- postcss
+- Tecnologies:<br/>
+-- SCSS<br/>
+-- HTML<br/>
+-- Node packages:<br/>
+--- autoprefixer<br/>
+--- concat<br/>
+--- live-server<br/>
+--- node-sass<br/>
+--- npm-run-all<br/>
+--- postcss<br/>
 --- postcss-cli
