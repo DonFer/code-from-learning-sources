@@ -17,4 +17,4 @@ It is the code I built following the course https://www.udemy.com/course/advance
 --- postcss<br/>
 --- postcss-cli
 
-![Image of Yaktocat](https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/natours-floats/img/homepage.png)
+<img width=“100px” height="100px" alt="homepage image" src="https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/natours-floats/img/homepage.png">
