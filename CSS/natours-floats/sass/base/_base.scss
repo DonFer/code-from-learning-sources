@@ -1,0 +1,29 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+:root {
+  font-size:62.5%; //1rem = 10px
+
+  @include add-media-query( map-get($mq-bp, "big-desktop") ) {
+    font-size:75%; //1rem = 12px;
+  }
+  
+  @include add-media-query( map-get($mq-bp, "tablet-landscape") ) {
+    font-size:56.25%; //1rem = 9px;
+  }
+
+  @include add-media-query( map-get($mq-bp, "tablet-portrait") ) {
+    font-size:50%; //1rem = 8px;
+  }
+}
+
+::selection {
+  background-color: map-get($colors, "primary-dark");
+  color: white;
+}
+

@@ -1,0 +1,210 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height:52rem;
+
+  position:relative;
+
+  &__side {
+    
+    height:52rem;
+    border-radius:3px;
+    box-shadow:0 1.5rem 4rem rgba(0,0,0,.15);
+
+    transition-property: transform;
+    transition-duration: .8s;
+    transition-timing-function: ease;
+
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    backface-visibility: hidden;
+    overflow:hidden;
+
+    &--front {
+      background-color:white;
+    }
+
+    &--back {
+      transform:rotateY(-180deg);
+
+      &-1 {
+        @include set-background-image("secondary");
+      }
+
+      &-2 {
+        @include set-background-image("primary");
+      }
+
+      &-3 {
+        @include set-background-image("tertiary");
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg); 
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0); 
+  }
+
+  //font side styling
+  &__picture { 
+    height:23rem;
+    background-size:cover;
+    clip-path: polygon(0% 0%,100% 0%,100% 85%, 0% 100%);
+
+    &--1 {  
+      @include set-background-image(
+        "secondary",
+        "../img/nat-5.jpg", 
+        saturation);
+    }
+
+    &--2 {
+      @include set-background-image(
+        "primary",
+        "../img/nat-6.jpg", 
+        difference);    
+    }
+
+    &--3 {
+      @include set-background-image(
+        "primary",
+        "../img/nat-7.jpg", 
+        hue);  
+    }
+  }
+
+  &__heading {
+    width:75%;
+    font-size:2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align:right;
+    color:white;
+
+    position:absolute;
+    top:12rem;
+    right:2rem;
+  }
+
+  &__heading-span {
+    padding:1rem 1.5rem;
+    -webkit-box-decoration-break:clone;
+
+    &--1 {
+      @include set-background-image(
+        $color-name:"secondary",
+        $opacity:0.85 ); 
+    }
+
+    &--2 {
+      @include set-background-image(
+        $color-name:"primary",
+        $opacity:0.85 ); 
+    }
+
+    &--3 {
+      @include set-background-image(
+        $color-name:"tertiary",
+        $opacity:0.85 ); 
+    }
+  }
+
+  &__details {
+    padding:3rem;
+
+    ul {
+      list-style:none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size:1.5rem;
+        padding:1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    color: white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size:1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size:6rem;
+    font-weight:100;
+  }
+
+  // @include add-media-query(map-get($mq-bp, "tablet-portrait")) {
+  @media only screen and ( max-width( map-get($mq-bp,"tablet-portrait") )),
+         only screen and ( hover: none )  {
+    height:auto;
+    border-radius:3px;
+    position:relative;
+    background-color: white;
+    box-shadow:0 1.5rem 4rem rgba(0,0,0,.15);
+
+    &__side {
+      
+      height:auto;
+      position:relative;  
+      overflow:hidden;
+      box-shadow:none;
+
+      &--back {
+        transform:rotateY(0);   
+        clip-path:polygon(0 15%, 100% 0, 100% 100%, 0 100%);  
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0); 
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    &__cta {
+      top:0;
+      left:0;
+      position: relative;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 3rem;
+    }
+
+    &__price-value {
+      font-size:4rem;
+    }
+  }
+}

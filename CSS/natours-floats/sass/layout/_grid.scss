@@ -1,0 +1,58 @@
+.row {
+  max-width: map-get($grid,"width");
+  margin:0 auto;
+
+  @include add-media-query(map-get($mq-bp,"tablet-portrait")){
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+    
+  &:not(:last-child){
+    margin-bottom:map-get($grid,"gutter-vertical");
+
+    @include add-media-query(map-get($mq-bp,"tablet-portrait")){
+      margin-bottom: map-get($grid,"gutter-vertical-small");
+    }
+  } 
+
+  @include clearfix;
+
+  [class ^= "col-"]{
+    float:left;
+
+    &:not(:last-child){
+      margin-right: map-get($grid,"gutter-horizontal" );
+
+      @include add-media-query(map-get($mq-bp,"tablet-portrait")){
+        margin-right: 0;
+        margin-bottom: map-get($grid, "gutter-vertical-small");
+      }
+    } 
+
+    @include add-media-query(map-get($mq-bp,"tablet-portrait")){
+      width: 100% !important;
+    }
+  }
+
+  .col-1-of-2 {
+    width:calc(( 100% - #{map-get($grid,"gutter-horizontal")}) / 2 ); 
+  }
+
+  .col-1-of-3 {
+    width:calc(( 100% - #{map-get($grid,"gutter-horizontal")} * 2 ) / 3 );
+  }
+  .col-2-of-3 {
+    width:calc((( 100% - #{map-get($grid,"gutter-horizontal")} * 2 ) / 3 ) * 2 + #{map-get($grid,"gutter-horizontal")});
+  }
+
+  .col-1-of-4 {
+    width:calc(( 100% - #{map-get($grid,"gutter-horizontal")} * 3 ) / 4 );
+  }
+  .col-2-of-4 {
+    width:calc(#{map-get($grid,"gutter-horizontal")} + 2 * ( 100% - #{map-get($grid,"gutter-horizontal")} * 3 ) / 4 );
+  }
+  .col-3-of-4{
+    width:calc( (#{map-get($grid,"gutter-horizontal")} * 2) + 3 * ( 100% - #{map-get($grid,"gutter-horizontal")} * 3 ) / 4 );
+  }
+  
+}

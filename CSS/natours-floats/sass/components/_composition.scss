@@ -1,0 +1,65 @@
+.composition {
+
+  position:relative;
+
+  &__photo {
+    width:55%;
+    box-shadow:0 1.5rem 4rem rgba(0,0,0,.4);
+    border-radius:2px;
+    position:absolute;
+
+    transition-property: transform, z-index, outline;
+    transition-duration: .2s;
+
+    @include add-media-query(map-get($mq-bp,"tablet-portrait")){
+      float:left;
+      position:relative;
+      width: calc( 1/3 * 100% );
+      box-shadow: 0 1.5rem 3rem rgba(black, .2);     
+    }
+
+    &--p1 {
+      left:0;
+      top:-2rem;
+
+      @include add-media-query(map-get($mq-bp,"tablet-portrait")){
+        top: 0;
+        transform: scale(1.2);
+      }
+    }
+
+    &--p2 {
+      right:0;
+      top:2rem;
+
+      @include add-media-query(map-get($mq-bp,"tablet-portrait")){
+        top:-1rem;
+        transform: scale(1.3);
+        z-index:1;
+      }
+    }
+
+    &--p3 { 
+      left:20%;
+      top:10rem;
+
+      @include add-media-query(map-get($mq-bp,"tablet-portrait")){
+        top: 1rem;
+        left: 0;
+        transform: scale(1.1);
+      }
+    }
+
+    &:hover {
+      transform:scale(1.05) translateY(-.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(0,0,0,.5);
+      outline:1.5rem solid map-get($colors, "primary");
+      outline-offset:2rem;
+      z-index:20;
+    }
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform:scale(.90);
+  }
+}

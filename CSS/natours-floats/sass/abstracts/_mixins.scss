@@ -1,0 +1,27 @@
+@mixin clearfix {
+  &::after{
+    content:"";
+    clear: both;
+    display:block;
+  }
+}
+
+@mixin set-background-image($color-name, $img:"", $add-saturation:"", $opacity:1){
+  background-image: 
+    linear-gradient(
+      to right bottom,
+      rgba( map-get($colors,"#{$color-name}-light") , $opacity ),
+      rgba( map-get($colors,"#{$color-name}-dark") , $opacity )
+    ),
+    url($img);
+
+  @if str-length($string: #{$add-saturation})  > 0 {
+    background-blend-mode: $add-saturation;
+  }
+}
+
+@mixin add-media-query($mq-bp) {
+  @media only screen and (max-width: $mq-bp){
+    @content
+  };
+}

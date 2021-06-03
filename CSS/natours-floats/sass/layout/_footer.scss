@@ -1,0 +1,81 @@
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #999;  
+
+  @include add-media-query(map-get($mq-bp,"tablet-portrait")){
+    padding: 8rem 0;
+  }
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+
+    @include add-media-query(map-get($mq-bp, "tablet-portrait")){
+      margin-bottom: 6rem;  
+    }
+  }
+
+  &__logo {
+    width: 15rem;
+    height: auto;
+  }
+
+  &__navigation {
+    border-top: 1px solid #999;
+    padding-top: 2rem;
+    display:inline-block;
+
+    @include add-media-query(map-get($mq-bp,"tablet-portrait")){
+      text-align:center;
+    }
+  }
+
+  &__list {
+    list-style:none;
+    width:max-content;
+  }
+
+  &__item {
+    display:inline-block;
+    &:not(:last-of-type){
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: #999;
+      background-color:#333;
+      text-decoration: none;
+      text-transform: uppercase;
+      display:inline -block;
+      transition: transform .2s;
+    }
+
+    &:hover,
+    &:active {
+      color: map-get($colors, "primary-light");
+      box-shadow: 0 1rem 2rem rgba(black, .4);
+      transform: rotate( 5deg ) scale( 1.3 );
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid #999;
+    padding-top: 2rem;
+    width: 85%;
+    float:right;
+
+    @include add-media-query(map-get($mq-bp,"tablet-portrait")){
+      width:fit-content;
+      text-align:center;
+      display:block;
+      margin:0 auto;
+      float:none;
+    }
+  }
+
+}

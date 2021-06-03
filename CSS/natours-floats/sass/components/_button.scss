@@ -1,0 +1,85 @@
+.btn {
+  &,
+  &:link, 
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size:1.6rem;
+    padding: 1.5rem 4rem;
+    display:inline-block;
+    border:none;
+    border-radius:10rem;
+    animation: moveFromBottom 1s 1.5s ease-out;
+    animation-fill-mode:backwards;
+    transition: transform .2s, box-shadow .2s;
+    cursor:pointer;
+
+    position:relative;
+  }  
+
+  &:hover {
+    transform:translateY(-0.3rem);
+    box-shadow:0 1rem 2rem rgba(0,0,0,0.2);
+  }
+
+  &:active, 
+  &:focus{
+    outline:none;
+    transform:translateY(-0.1rem);
+    box-shadow:0 .5rem 1rem rgba(0,0,0,0.2);
+  }
+
+  &::after {
+    content:"";
+    position:absolute;
+    display:inline-block;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    border-radius:10rem;
+    z-index:-1;
+    background-color:inherit;
+    transition: transform .4s, opacity .4s;  
+  }
+
+  &:hover::after{
+    transform:scale(1.4,1.6);
+    opacity:0;
+  }
+
+  &--white{
+    background-color:#fff;
+    color:map-get($colors,"primary");
+  }
+
+  &--green {
+    color:white;
+    background-color: map-get($colors,"primary-dark");
+  }
+}
+
+.btn-text { 
+  &:link,
+  &:visited {
+    color: map-get($colors, "primary");
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid map-get($colors, "primary");
+    padding: 3px;
+    font-size: $default-fontsize;
+
+    transition: transform .2s;
+  }
+
+  &:hover {
+    background-color: map-get($colors, "primary-light" );
+    box-shadow:0 1rem 2rem rgba(0,0,0,.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,37 @@
+$default-fontsize:1.6rem;
+
+$ft-ws:(
+  "normal":400, 
+  "bold":700, 
+  "bolder":900);
+
+$colors:(
+  "primary":#777,
+  "primary-dark":#28b485, 
+  "primary-light":#7ed56f,
+  "grey-light-1":#f7f7f7,
+  "secondary-light":#ffb900,
+  "secondary-dark":#ff7730,
+  "tertiary-light":#2998ff,
+  "tertiary-dark":#5643fa );
+
+// Grid 
+$grid:(
+  "width":114rem,
+  "gutter-vertical":8rem,
+  "gutter-vertical-small":6rem,
+  "gutter-horizontal":6rem ); 
+
+/*
+  0px - 600px Phone
+  600px - 900px Tablet portrait
+  900px - 1200px Tablet landscape
+  [1200 - 1800] is where our normal styles apply
+  +1800px  Big desktop
+*/
+$mq-bp:(
+  "phone": 37.5em, //600px
+  "tablet-portrait": 56.25em, //900px
+  "tablet-landscape": 75em, //1200px
+  "big-desktop": 112.5em //1800px
+);
