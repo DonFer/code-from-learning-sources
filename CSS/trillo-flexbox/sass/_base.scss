@@ -1,0 +1,55 @@
+$clrs: (
+  "primary":#eb2f64, 
+  "primary-light":#FF3366,
+  "primary-dark":#BA265D,
+  "greylight-1":#faf9f9,
+  "greylight-2":#f4f2f2,
+  "greylight-3":#f0eeee,
+  "greylight-4":#ccc,
+  "greydark-1":#333,
+  "greydark-2":#777,
+  "greydark-3":#999 );
+
+$media-query-breakpoints: (
+  "largest": 75em, //1200px
+  "large": 68.75em, //1100px
+  "medium": 56.25em, //900px,
+  "small":37.5em, //600px,
+  "smallest":31.25em, //500px
+);
+
+$shadows:("dark":0 2rem 6rem rgba(0,0,0,.3));
+
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+:root {
+  font-size: 62.5%; //10px
+
+  @media only screen and
+  ( max-width: map-get($media-query-breakpoints, "large") ){
+    font-size: 50%; //8px
+  }
+}
+
+body { 
+  font-family:"Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+
+  min-height: 100vh;
+
+  color: map-get($clrs, "greydark-2");
+  background-image: linear-gradient(
+    to right bottom,
+    map-get($clrs,"primary-light"),
+    map-get($clrs,"primary-dark")
+  );
+  background-size:cover;
+  background-repeat:no-repeat;
+}
