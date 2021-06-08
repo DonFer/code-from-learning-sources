@@ -16,3 +16,5 @@ It is the code I built following the course https://www.udemy.com/course/advance
 --- npm-run-all<br/>
 --- postcss<br/>
 --- postcss-cli
+
+![](https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/natours-floats/img/homepage.png)
