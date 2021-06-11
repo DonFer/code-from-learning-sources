@@ -8,10 +8,10 @@ Repo for code made following tutorials, courses, etc
     It is the code I built following the course https://www.udemy.com/course/advanced-css-and-sass/ from Jonas Schmedtmann
   </summary> 
   
-  - Tecnologies:<br/>
-  -- SCSS<br/>
-  -- HTML<br/>
-  -- Node packages:<br/>
+  Tecnologies:
+  * SCSS
+  * HTML
+  * Node packages:<br/>
   --- autoprefixer<br/>
   --- concat<br/>
   --- live-server<br/>
@@ -23,22 +23,26 @@ Repo for code made following tutorials, courses, etc
   ![](https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/natours-floats/img/homepage.png) 
 </details>  
   
+# CSS/trillo-flexbox
+<details>
+  <summary>
+    Responsive Website with flexbox.
+    It is the code I built following the course https://www.udemy.com/course/advanced-css-and-sass/ from Jonas Schmedtmann
+  </summary>
+  
+  - Tecnologies:<br/>
+  -- SCSS<br/>
+  -- HTML<br/>
+  -- Node packages:<br/>
+  --- autoprefixer<br/>
+  --- live-server<br/>
+  --- node-sass<br/>
+  --- npm-run-all<br/>
+  --- postcss<br/>
+  --- postcss-cli
+
+  ![](https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/trillo-flexbox/img/Trillo-flexbox.png)
+</details>
 
 
-----------------------
-CSS/trillo-flexbox
-----------------------
-Responsive Website with flexbox.
-It is the code I built following the course https://www.udemy.com/course/advanced-css-and-sass/ from Jonas Schmedtmann
-- Tecnologies:<br/>
--- SCSS<br/>
--- HTML<br/>
--- Node packages:<br/>
---- autoprefixer<br/>
---- live-server<br/>
---- node-sass<br/>
---- npm-run-all<br/>
---- postcss<br/>
---- postcss-cli
 
-![](https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/trillo-flexbox/img/Trillo-flexbox.png)
