@@ -8,6 +8,7 @@ Repo for code made following tutorials, courses, etc
     It is the code I built following the course https://www.udemy.com/course/advanced-css-and-sass/ from Jonas Schmedtmann
   </summary>  
     ## Tecnologies
+  
     * SCSS
     * HTML
     * Node packages
@@ -29,6 +30,7 @@ Repo for code made following tutorials, courses, etc
     It is the code I built following the course https://www.udemy.com/course/advanced-css-and-sass/ from Jonas Schmedtmann
   </summary>  
     ## Tecnologies
+  
     * SCSS
     * HTML
     * Node packages
