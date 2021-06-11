@@ -1,7 +1,7 @@
 # code-from-learning-sources
 Repo for code made following tutorials, courses, etc
 
-# CSS/natours-floats
+# [CSS/natours-floats](../CSS/natours-floats)
 <details>
   <summary>
     Responsive Website with responsive images and floats.
