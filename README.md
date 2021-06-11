@@ -19,7 +19,7 @@ Repo for code made following tutorials, courses, etc
       * postcss
       * postcss-cli
 
-    ![](https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/natours-floats/img/homepage.png) 
+  ![](https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/natours-floats/img/homepage.png) 
 </details>  
   
 # [CSS/trillo-flexbox](CSS/trillo-flexbox)
@@ -28,7 +28,7 @@ Repo for code made following tutorials, courses, etc
     Responsive Website with flexbox.
     It is the code I built following the course https://www.udemy.com/course/advanced-css-and-sass/ from Jonas Schmedtmann
   </summary>  
-    ## Tecnologies:
+    ## Tecnologies
     * SCSS
     * HTML
     * Node packages
@@ -39,7 +39,7 @@ Repo for code made following tutorials, courses, etc
       * postcss
       * postcss-cli
 
-    ![](https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/trillo-flexbox/img/Trillo-flexbox.png)
+  ![](https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/trillo-flexbox/img/Trillo-flexbox.png)
 </details>
 
 
