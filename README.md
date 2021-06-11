@@ -6,7 +6,8 @@ Repo for code made following tutorials, courses, etc
   <summary>
     Responsive Website with responsive images and floats.
     It is the code I built following the course https://www.udemy.com/course/advanced-css-and-sass/ from Jonas Schmedtmann
-  </summary>  
+  </summary>
+  
     ## Tecnologies
   
     * SCSS
@@ -28,7 +29,8 @@ Repo for code made following tutorials, courses, etc
   <summary>
     Responsive Website with flexbox.
     It is the code I built following the course https://www.udemy.com/course/advanced-css-and-sass/ from Jonas Schmedtmann
-  </summary>  
+  </summary>
+  
     ## Tecnologies
   
     * SCSS
