@@ -8,18 +8,18 @@ Repo for code made following tutorials, courses, etc
     It is the code I built following the course https://www.udemy.com/course/advanced-css-and-sass/ from Jonas Schmedtmann
   </summary> 
   
-  Tecnologies:
+  ## Tecnologies
   * SCSS
   * HTML
-  * Node packages:<br/>
-  --- autoprefixer<br/>
-  --- concat<br/>
-  --- live-server<br/>
-  --- node-sass<br/>
-  --- npm-run-all<br/>
-  --- postcss<br/>
-  --- postcss-cli
-
+  * Node packages
+    * autoprefixer
+    * concat
+    * live-server<br/>
+    * node-sass
+    * npm-run-all
+    * postcss
+    * postcss-cli
+  
   ![](https://github.com/DonFer/code-from-learning-sources/blob/main/CSS/natours-floats/img/homepage.png) 
 </details>  
   
