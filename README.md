@@ -1,7 +1,7 @@
 # code-from-learning-sources
 Repo for code made following tutorials, courses, etc
 
-# [CSS/natours-floats](CSS/natours-floats)
+# [CSS/nexter-grid](CSS/nexter-grid)
 <details>
   <summary>
     Responsive homepage with css grid.
